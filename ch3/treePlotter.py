@@ -32,9 +32,9 @@ def getTreeDepth(myTree):
     for key in secondDict.keys():
         if type(secondDict[key]) == dict:
            thisDepth = 1 + getTreeDepth(secondDict[key])
-    else:
-        thisDepth = 1
-    if thisDepth > maxDepth: maxDepth = thisDepth
+        else:
+            thisDepth = 1
+        if thisDepth > maxDepth: maxDepth = thisDepth
     return maxDepth
 
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
