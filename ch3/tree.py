@@ -56,7 +56,7 @@ def chooseBestFeatureToSplit(dataSet):
         if(infoGain>bestInfoGain):
             bestInfoGain=infoGain
             bestFeature=i
-        return bestFeature
+    return bestFeature
 
 #确定决策树叶子节点的分类
 def majorityCnt(classList):
